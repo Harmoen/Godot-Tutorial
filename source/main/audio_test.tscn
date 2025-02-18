@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://cji4wgpvrus08"]
+
+[ext_resource type="Script" path="res://source/main/audio_test.gd" id="1_2cukg"]
+[ext_resource type="Texture2D" uid="uid://b160p2258g5t6" path="res://assets/icon.svg" id="1_5qacf"]
+[ext_resource type="AudioStream" uid="uid://bqyi4sdve6ef7" path="res://assets/audio/Skeleton Attack_1.wav" id="2_r2abw"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_2cukg")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 83.0
+offset_top = 60.0
+offset_right = 223.0
+offset_bottom = 91.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3.94479, 3.94479)
+text = "Press this Button"
+
+[node name="SkellyDeath_AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(394, 293)
+stream = ExtResource("2_r2abw")
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+position = Vector2(533, 367)
+current = true
+
+[node name="Sprite2D" type="Sprite2D" parent="AudioListener2D"]
+scale = Vector2(0.624319, 0.624319)
+texture = ExtResource("1_5qacf")
+
+[node name="Texts" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Texts"]
+offset_left = 587.0
+offset_top = 358.0
+offset_right = 794.0
+offset_bottom = 381.0
+text = "<- AudioListener2D is right here
+    This is the location of the microphone in-game, 
+    which determines if something goes on left or right speaker"

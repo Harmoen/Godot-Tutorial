@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bxbas8cm5iq8l"
+path="res://.godot/imported/Lighthearted (Menu).ogg-6502acebf8233ffa5ba44588d99061b6.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Lighthearted (Menu).ogg"
+dest_files=["res://.godot/imported/Lighthearted (Menu).ogg-6502acebf8233ffa5ba44588d99061b6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
